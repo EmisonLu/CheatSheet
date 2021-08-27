@@ -38,7 +38,12 @@ git rebase --skip
 git push origin master --force
 ```
 
+## Cancel the commit that has been pushed
 
+```bash
+git reset --hard <commitId>
+# --hard, discard the modification of the current workspace
+# --soft, roll back to the previous version, but keep the changes in the current workspace, you can resubmit
 
-
-
+git push origin <branch> --force
+```
